@@ -1,0 +1,12 @@
+.shadow-l {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/shadow-l.png', sizingMethod='image');
+}
+.shadow-r {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/shadow-r.png', sizingMethod='image');
+}
+.shadow-b {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/shadow-b.png', sizingMethod='image');
+}
