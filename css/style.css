@@ -581,6 +581,43 @@ table tr td {
 	padding:15px;
 }
 
+table.programTable {
+	border-spacing: 0px 0;
+	border:0px;
+	/*border-collapse:collapse*/
+
+}
+table.programTable tr {
+	/*font-size:medium;*/
+	padding:0px;
+
+}
+
+
+.program_heading {
+	background:lightgrey;
+
+}
+
+table.programTable td {
+	padding:2px;
+
+}
+
+.program_font {
+
+	font-color:red;
+}
+
+table.programTable th {
+
+	text-align:center;
+	font-weight:bold;
+	font-size:150%;
+	padding:0px;
+
+}
+
 th {
 	text-align:left;
 	font-weight:bold;
