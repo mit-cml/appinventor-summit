@@ -275,6 +275,32 @@ textarea {
 	background-position: 0 0;
 	background: url('images/register_todayhover.png')  no-repeat 0 0;
 }
+
+
+.sponsor_button {
+	display: block;
+	/*background: url('images/registration.png')  no-repeat 0 0;*/
+	background: url('images/sponsor.png')  no-repeat 0 0;
+	text-indent: -99999px;
+	width:600px;
+	height:172px;
+	border-top:0px solid #dbdbdb;
+	border-bottom:0px solid #dbdbdb;
+	margin: 0; 
+	list-style:none;
+	float:right;
+	border-right:0px solid #dbdbdb;
+	padding:0px;
+	text-decoration: none;
+
+}
+
+
+.sponsor_button:hover {
+	background-position: 0 0;
+	background: url('images/sponsorhover.png')  no-repeat 0 0;
+}
+
 .attending:hover {
 	background-position: 0 0;
 	background: url('images/attendinghover.png')  no-repeat 0 0;
@@ -561,7 +587,7 @@ textarea {
 }
 
 .organizer {
-	width: 200px;
+	width: 100px;
 	height: auto;
 
 }
