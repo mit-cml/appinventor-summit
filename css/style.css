@@ -230,6 +230,8 @@ textarea {
 	background: url('images/organizershover.png')  no-repeat 0 0;
 }
 
+
+
 .contact-current {
 
 	background: url('images/organizershover.png')  no-repeat 0 0;
@@ -276,6 +278,31 @@ textarea {
 	background: url('images/register_todayhover.png')  no-repeat 0 0;
 }
 
+
+.sponsor_logo {
+	display: block;
+	/*background: url('images/registration.png')  no-repeat 0 0;*/
+	background: url('images/sponsor_logo.png')  no-repeat 0 0;
+	text-indent: -99999px;
+	width:120px;
+	/*height:172px;*/
+	height:120px;
+	border-top:0px solid #dbdbdb;
+	border-bottom:0px solid #dbdbdb;
+	margin: 0; 
+	list-style:none;
+	float:right;
+	border-right:0px solid #dbdbdb;
+	padding:0px;
+	text-decoration: none;
+
+}
+
+
+.sponsor_logo:hover {
+	background-position: 0 0;
+	background: url('images/sponsor_logo.png')  no-repeat 0 0;
+}
 
 .sponsor_button {
 	display: block;
