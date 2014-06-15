@@ -613,6 +613,11 @@ textarea {
 	height: auto;
 }
 
+.sponsor_1 {
+	width: 120px;
+	height: auto;
+	float:right;
+}
 .organizer {
 	width: 100px;
 	height: auto;
