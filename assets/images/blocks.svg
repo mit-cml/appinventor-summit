@@ -41,13 +41,15 @@ overflow: hidden;
  /* fill: #000; */ /* Use white rather than black on dark orange */
   stroke-width: 1;
   fill: #000;
-}
+  }
+  /*
 .blocklyFieldParameter:hover>rect {
   stroke-width: 2;
   stroke: rgb(231,175,150);
   fill: rgb(231,175,150);
   fill-opacity: 1.0;
-}
+  }
+  */
 /*
  * [lyn, 10/08/13] Control flydown with the getter/setter blocks.
  */
@@ -191,10 +193,12 @@ fill-opacity: .6;
 .blocklyEditableText>text {
 fill: #000;
 }
+/*
 .blocklyEditableText:hover>rect {
 stroke: #fff;
 stroke-width: 2;
 }
+*/
 .blocklyBubbleText {
 fill: #000;
 }
