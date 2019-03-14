@@ -2,28 +2,39 @@
 layout: home
 ---
 
-The MIT App Inventor Summit is the annual gathering of the world-wide
+**The MIT App Inventor Summit** is a gathering of the world-wide
 App Inventor community. Hosted by the MIT Computer Science and Artificial Intelligence Laboratory
-(CSAIL), this summit brings together a diverse range of individuals,
-including: research scientists; educators from formal and informal
-settings; NGO staff members; computer scientists; representatives from
-industry; entrepreneurs; and others. The intimate size, exhilarating
-program, and accomplished attendees make the MIT App Inventor Summit
-the ideal opportunity to share current work, form new collaborations,
+(CSAIL), the summit brings together a diverse range of individuals,
+including:
+- research scientists;
+- educators from formal and informal settings;
+- NGO staff members;
+- computer scientists;
+- representatives from industry;
+- entrepreneurs;
+- and others.
+The intimate size, exhilarating program, and accomplished attendees make the MIT App Inventor Summit
+an ideal opportunity to share current work, form new collaborations,
 and stay abreast of the latest developments within the MIT App
 Inventor community.
 
-The summit will include keynotes, panel discussions with the original
-development team as well as current team members, presentations by
-students, teachers, and professional app developers, a poster session,
-and a reception for people to share ideas and inspiration.
+**This year's summit will include:**
+- Youth Mobile Power Awards
+- Keynote Speakers
+- Panel discussions with the original
+development team as well as current team members
+- Presentations by students, teachers, and professional app developers
+- Poster session
+- Mini-hackathon
+- Networking reception
 
 
 ## Youth Mobile Power Programming Competition
 
-At the summit we will be announcing the winners for the Youth Mobile
-Power app challenge jointly run by MIT and YR Media. ***[Click here to
-learn more about participating in the Youth Mobile Power App
+A highlight of the summit will be the official recognition of the winners of the Youth Mobile
+Power, MIT App Inventor challenge, run by MIT and YR Media.
+
+***[Learn more about participating in the Youth Mobile Power App
 Challenge](http://appinventor.mit.edu/explore/youth-mobile-power-app-challenge.html
 )***.
 
@@ -35,9 +46,9 @@ Lissa Soep, YR Media
 
 ## Panels
 
-### Meet the Original Google Team
+### Meet the Original App Inventor Team
 
-Meet the team that started it all. Members of the original App Inventor team at Google will talk about the beginning days of App Inventor and share their thoughts on computer science education in the 10 years since the debut of App Inventor.
+Meet the team that started it all. Members of the original App Inventor team will talk about the beginning days of App Inventor and share their thoughts on computer science education in the 10 years since the debut of App Inventor.
 
 ### Sneak Peek at Upcoming Features with the Development Team
 
