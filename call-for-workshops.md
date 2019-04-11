@@ -18,6 +18,6 @@ Potential topics for workshops may include, but are not limited to:
 
 We will consider proposals for "half" day and "full" day workshops. Half day workshops will be 3 hours in length while full day workshops will be 5 hours in length.
 
-Proposals should be submitted via EasyChair. Proposers must indicate the suggested length of a workshop. The organizing committee will attempt to accomodate the desired lengths where possible depending on the number and desired length of submissions accepted by the program committee.
+Proposals should be submitted via [EasyChair](https://easychair.org/conferences/?conf=appinv2019). Proposers must indicate the suggested length of a workshop. The organizing committee will attempt to accomodate the desired lengths where possible depending on the number and desired length of submissions accepted by the program committee.
 
-Submissions must be submitted to EasyChair by 11:59 PM EDT, April 5th 2019. Notifications will be sent by April 26th.
+Submissions must be submitted to [EasyChair](https://easychair.org/conferences/?conf=appinv2019) by 11:59 PM EDT, April 26th 2019. Notifications will be sent by May 10th.
