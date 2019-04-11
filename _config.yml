@@ -32,6 +32,13 @@ theme: minima
 plugins:
   - jekyll-feed
 
+header_pages:
+  - 10-dates.md
+  - 20-calls.md
+  - 30-attending.md
+  - 40-program.md
+  - 50-organization.md
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

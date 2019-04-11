@@ -1,6 +1,5 @@
 ---
 layout: default
-#title: Call for Workshops
 permalink: /calls/workshops
 ---
 
