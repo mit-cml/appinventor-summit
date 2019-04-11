@@ -31,3 +31,7 @@ By vehicle:
 ## Accommodations
 
 There are a number of hotels nearby to MIT. You may also be able to stay in the Greater Boston area using AirBnb.
+
+## Visa Letters
+
+If you need an invitation for a visa to visit the United States, please send an email to [Marisol Diaz](mailto:marisol@csail.mit.edu). Letters will only be provided to individuals with confirmed registration at the time the letter is issued.
