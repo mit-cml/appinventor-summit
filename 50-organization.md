@@ -7,7 +7,7 @@ permalink: /organization
 ## Organizing Committee
 
 * Marisol Diaz, MIT
-* Josh Sheldon, MIT
+* Karen Lang, MIT
 * Evan Patton, MIT
 
 ## Program Commitee
@@ -17,5 +17,5 @@ permalink: /organization
 * Karen Lang, Education & Business Development Manager, MIT App Inventor
 * Ralph Morelli, Mobile CSP / Trinity College
 * Evan Patton, Lead Developer, MIT App Inventor
-* Josh Sheldon, Associate Director, MIT App Inventor
+* Josh Sheldon, Playful Journey Lab, MIT
 * Selim Tezel, Curriculum Development, MIT App Inventor

@@ -56,7 +56,7 @@ Lead Developer Evan Patton will demonstrate upcoming features for MIT App Invent
 
 ### Education Panel: Pedagogy with MIT App Inventor
 
-Josh Sheldon, Karen Lang, and Selim Tezel will participate in a discussion about curriculum development at MIT.
+Karen Lang and Selim Tezel will participate in a discussion about curriculum development at MIT.
 
 ## Other Highlights
 
