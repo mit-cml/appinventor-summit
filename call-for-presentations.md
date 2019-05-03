@@ -14,4 +14,4 @@ Tracks will include:
 * App Inventor in research
 * App Inventor extensions: Pushing the boundaries
 
-Submissions will be a two-page extended abstract on US letter paper. Accepted papers will be published under the Creative Commons 4.0 International Share-Alike license on the summit website. Submissions are due by 11:59 PM EDT on May 3rd on the [EasyChair](https://easychair.org/conferences/?conf=appinv2019) website.
+Submissions will be a two-page extended abstract on US letter paper. Accepted papers will be published under the Creative Commons 4.0 International Share-Alike license on the summit website. Submissions are due by 11:59 PM EDT on May 10th on the [EasyChair](https://easychair.org/conferences/?conf=appinv2019) website.
