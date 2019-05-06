@@ -42,7 +42,10 @@ Challenge](http://appinventor.mit.edu/explore/youth-mobile-power-app-challenge.h
 
 ![Lissa Soep](assets/images/lissa-small.jpg)
 
-Lissa Soep, YR Media
+**Lissa Soep, YR Media**
+
+Elisabeth (Lissa) Soep is Executive Producer for Journalism and Founding Director of the Innovation Lab at YR Media (formerly Youth Radio), the Oakland-based national network for next-generation news and arts. YR stories Lissa has produced with teen reporters have been recognized with honors including two Peabody Awards, five Murrow Awards, an Investigative Reporters and Editors Award, two Third Coast International Audio Festival Awards, and the Robert F. Kennedy Journalism Award. With a PhD from Stanford University’s School of Education, Lissa has written about digital media and learning for academic journals, popular outlets (NPR, Boing Boing), and books including Youthscapes (with Maira, UPenn Press), Drop that Knowledge (with Chávez, UC Press), and Participatory Politics (MIT Press). With Asha Richardson, she founded YR’s Innovation Lab, a partnership with MIT and Cornell Tech that was among the first community-based initiatives in the US to teach teens to code, and the first embedded in a newsroom. Her work as a writer, producer, and editor has been featured on NPR, the New York Times, The Atlantic/CityLab, and Teen Vogue. In 2011, she became one of six members of the MacArthur Foundation’s Youth and Participatory Politics Research Network, which explored how young people use digital and social media to express civic voice and agency. For more than ten years, Lissa served on the Board of Directors of the United States’ premier youth poetry organization, Youth Speaks.
+
 
 ## Panels
 
