@@ -42,10 +42,38 @@ div.content {
   min-height: 100%;
 }
 
+div.speaker>img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 144px;
+  display: block;
+}
+
+div.speaker::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.speaker {
+  clear: both;
+  margin: 2em 0;
+}
+
 @media(min-width: 768px) {
   .title .text {
     height: 78px;
     vertical-align: middle;
+  }
+  div.speaker>img {
+    float: left;
+    clear: left;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 1em;
+  }
+  div.speaker>div {
+    padding-left: 160px;
   }
 }
 

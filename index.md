@@ -53,6 +53,8 @@ Elisabeth (Lissa) Soep is Executive Producer for Journalism and Founding Directo
 
 Meet the team that started it all. Members of the original App Inventor team will talk about the beginning days of App Inventor and share their thoughts on computer science education in the 10 years since the debut of App Inventor.
 
+For more details about the Original App Inventor Team panel, please see [the announcement](2019/05/20/announcing-google-team-panel.html).
+
 ### Sneak Peek at Upcoming Features with the Development Team
 
 Lead Developer Evan Patton will demonstrate upcoming features for MIT App Inventor. Afterward, he will be joined by development team members Susan Lane and Jeffrey Schiller for a round table discussion with attendees about App Inventor development.
