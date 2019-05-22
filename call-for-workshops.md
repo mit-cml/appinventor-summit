@@ -19,4 +19,8 @@ We will consider proposals for "half" day and "full" day workshops. Half day wor
 
 Proposals should be submitted via [EasyChair](https://easychair.org/conferences/?conf=appinv2019). Proposers must indicate the suggested length of a workshop. The organizing committee will attempt to accomodate the desired lengths where possible depending on the number and desired length of submissions accepted by the program committee.
 
+<!--
 Submissions must be submitted to [EasyChair](https://easychair.org/conferences/?conf=appinv2019) by 11:59 PM EDT, April 26th 2019. Notifications will be sent by May 10th.
+-->
+
+<a href="/2019/05/21/summit-workshops-announced.html">The accepted workshops are now available online.</a>
