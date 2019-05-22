@@ -8,6 +8,111 @@ permalink: /program
 
 We are still developing the program based on submissions for the different calls. Check back periodically for updates.
 
+Table of Contents
+
+* [At A Glance](#at-a-glance)
+* [Keynote Speakers](#keynote-speakers)
+* [Panels](#panels)
+* [Workshops](#workshops)
+* [Other Events](#other-events)
+
+## At A Glance
+
+<div class="program" markdown="1">
+
+<hr>
+### Day 1
+
+#### Morning
+
+Session 1 (9:00-11:00):
+
+* Welcome by Hal Abelson, Class of 1922 Professor of EECS, MIT, and co-creator of App Inventor
+* Panel Discussion: Google App Inventor team members
+* Keynote Speaker: TBA
+* Hackathon
+
+Session 2 (11:30-12:30):
+
+* Hackathon (all day)
+* Presentation Session 1
+
+#### Afternoon
+
+Session 3 (13:30-15:00):
+
+* Hackathon (continued)
+* Workshop: How to utilize extensions and connect external hardware in App Inventor
+* Presentation Session 2
+
+Session 4 (15:30-17:30):
+
+* Hackathon (continued)
+* Workshop (continued)
+* Birds of a Feather sessions
+
+The reception will begin at 6pm.
+
+<hr>
+### Day 2
+
+#### Morning
+
+Session 1 (09:00-10:30)
+
+* Show & Tell with the Development Team: New Feature, Future Directions, Q&A
+* Education Panel: App Inventor Pedagogy
+
+Session 2 (11:00-12:30)
+
+* Workshop: Low Cost Health Devices and Apps
+* Hackathon (continued)
+* Presentation Session 3
+
+#### Afternoon
+
+Session 3 (13:30-15:00)
+
+* Workshop (continued)
+* Setup for poster session
+* Presentation Session 4
+
+Session 4 (15:30-17:30)
+
+* Lightning Talks
+* Workshop (continued)
+* Poster Session
+* Presentation Session 5
+
+<hr>
+### Day 3
+
+#### Morning
+
+Session 1 (09:30-10:30)
+
+* Keynote: Lissa Soep, YR Media
+
+Session 2 (11:00-12:30)
+
+* Workshop: A pedagogical experience with Wearable Technologies using MIT App Inventor and BBC Micro:bit
+* Workshop: The Mobile CSP Computer Science Principles Curriculum
+* Presentation Session 6
+
+#### Afternoon
+
+Session 3 (13:30-15:30):
+
+* Workshops (continued)
+* Presentation Session 7
+* Award and Closing Ceremonies
+
+*The Summit ends earlier on the third day in order to accomodate visitors travel needs.*
+
+<hr>
+
+</div>
+
 ## Keynote Speakers
 
 ![Lissa Soep](assets/images/lissa-small.jpg)
