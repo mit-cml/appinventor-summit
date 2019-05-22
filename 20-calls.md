@@ -10,4 +10,4 @@ The 2019 MIT App Inventor Summit reqquests participation in three styles: worksh
 
 [Call for Presentations](/calls/presentations) - Extended to May 10, 2019 (was May 3, 2019)
 
-[Call for Posters](/calls/posters) - Due May 24, 2019
+[Call for Posters](/calls/posters) - Extended to May 31, 2019 (was May 24, 2019)

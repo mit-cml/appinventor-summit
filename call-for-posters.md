@@ -17,4 +17,4 @@ Poster presentation topics may include but are not limited to:
 * MIT App Inventor extensions
 * Case studies on App Inventor in Education
 
-Poster abstracts must be submitted via [EasyChair](https://easychair.org/conferences/?conf=appinv2019) by 11:59 PM EDT on May 24th, 2019.
+Poster abstracts must be submitted via [EasyChair](https://easychair.org/conferences/?conf=appinv2019) by 11:59 PM EDT on May 31st, 2019.
