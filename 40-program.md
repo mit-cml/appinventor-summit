@@ -18,12 +18,20 @@ Table of Contents
 
 ## At A Glance
 
+Breakfast and lunch will be provided for all three days of the
+conference. Coffee breaks will be offered between the two morning
+sessions and two afternoon sessions of each day. A networking
+reception with cash bar will also be held on the first day of the
+summit beginning one half hour after the last session.
+
 <div class="program" markdown="1">
 
 <hr>
 ### Day 1
 
 #### Morning
+
+*Breakfast (8:30-9:00)*
 
 Session 1 (9:00-11:00):
 
@@ -39,6 +47,8 @@ Session 2 (11:30-12:30):
 
 #### Afternoon
 
+*Lunch (12:30-13:30)*
+
 Session 3 (13:30-15:00):
 
 * Hackathon (continued)
@@ -51,12 +61,14 @@ Session 4 (15:30-17:30):
 * Workshop (continued)
 * Birds of a Feather sessions
 
-The reception will begin at 6pm.
+*Reception (18:00-)*
 
 <hr>
 ### Day 2
 
 #### Morning
+
+*Breakfast (8:30-9:30)*
 
 Session 1 (09:00-10:30)
 
@@ -70,6 +82,8 @@ Session 2 (11:00-12:30)
 * Presentation Session 3
 
 #### Afternoon
+
+*Lunch (12:30-13:30)*
 
 Session 3 (13:30-15:00)
 
@@ -89,6 +103,8 @@ Session 4 (15:30-17:30)
 
 #### Morning
 
+*Breakfast (8:30-9:30)*
+
 Session 1 (09:30-10:30)
 
 * Keynote: Lissa Soep, YR Media
@@ -100,6 +116,8 @@ Session 2 (11:00-12:30)
 * Presentation Session 6
 
 #### Afternoon
+
+*Lunch (12:30-13:30)*
 
 Session 3 (13:30-15:30):
 
