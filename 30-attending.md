@@ -10,11 +10,11 @@ permalink: /attending
 The 2019 MIT App Inventor Summit offers a discounted individual Early Bird rate (before June 30th, 2019). Please note that at least one author must register for each accepted submission, or the corresponding content will NOT be presented at the conference.
 
 |REGISTRATION TYPE| Price |
-|-|-|
+|---|---|
 |Early Bird (Ends 30th June)|$300.00|
-|Regular (Ends 31st July)|$450.00|
-|On-Site|$550.00|
-|-|-|
+|Regular (Ends 31st July)|$375.00|
+|On-Site|$400.00|
+|---|---|
 
 For payment and registration please visit the 2019 MIT App Inventor [EventBrite page](https://www.eventbrite.com/e/mit-app-inventor-summit-2019-tickets-61195446227).
 
