@@ -40,6 +40,18 @@ Challenge](http://appinventor.mit.edu/explore/youth-mobile-power-app-challenge.h
 
 ## Keynote Speakers
 
+![Daniel Lai](assets/images/daniel-lai.jpg)
+
+**Daniel Lai, Program Director, CoolThink @ JC**
+
+Daniel is the Program Director of Coolthink@JC - a Computational Thinking and Coding Education Program for primary school students in Hong Kong.  The program is being funded by Hong Kong Jockey Club Charities Trust (“JCCT”), and co-created by JCCT, Massachusetts Institute of Technology, Education University of Hong Kong, and City University of Hong Kong. The aim of the program is to inspire digital creativity of students in this digital age. Since its launch in 2016, Coolthink@JC has trained 110 teachers and is being run in classes in 32 schools for 16,000 students.
+
+Daniel was Vice-President (Administration) and Professor of Practice (Computing) of Hong Kong Polytechnic University from 2015-2017, Government Chief Information Officer of Hong Kong SAR Government from January 2012 to January 2015; Head of Information Technology of MTR Corporation Ltd. from 1999 to 2011, and held senior IT managerial positions at The Hong Kong Jockey Club (HKJC) in Hong Kong and Australia between 1978 and 1999.
+
+Daniel is a seasoned information technology professional with 50 years’ experience. He is a graduate of Hong Kong Polytechnic University and Griffith University, with a Master in Technology Management. He is a Distinguished Fellow and Past President of Hong Kong Computer Society, Founding Chairman of CIO Board, and a Fellow of Hong Kong Institute of Engineers. 
+
+Daniel contributed significantly in promoting the development and application of IT in Hong Kong and the region. In recognition of his contribution to the development and promotion of IT, he was awarded Bronze Bauhinia Star (BBS) by the Hong Kong Government in 2004. Daniel has received many CIO Awards including Computerworld Laureate, Top China CIO Award, ZDNet CIO of the Year, and IDC Asia CIO of the Year etc. 
+
 ![Lissa Soep](assets/images/lissa-small.jpg)
 
 **Lissa Soep, YR Media**
