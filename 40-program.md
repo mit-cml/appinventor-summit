@@ -111,7 +111,7 @@ Session 1 (09:30-10:30)
 
 Session 2 (11:00-12:30)
 
-* Workshop: A pedagogical experience with Wearable Technologies using MIT App Inventor and BBC Micro:bit
+* Workshop: A practical introduction to Internet of Things(IOT) using MIT App Inventor and Micro:bit
 * Workshop: The Mobile CSP Computer Science Principles Curriculum
 * Presentation Session 6
 
