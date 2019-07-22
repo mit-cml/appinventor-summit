@@ -4,6 +4,46 @@ title: Program
 permalink: /program
 ---
 
+<style>
+.none {
+  background-color: #000;
+}
+.break {
+  background-color: #D9E2F3;
+}
+.hackathon {
+  background-color: #C47AA0;
+}
+.workshop {
+  background-color: #FEF2CB;
+}
+.birds {
+  background-color: #E36666;
+}
+.present {
+  background-color: #E9D0FF;
+}
+.keynote {
+  background-color: #FCE4D5;
+}
+.panel {
+  background-color: #FFBCB5;
+}
+.demos {
+  background-color: #6DA7DC;
+}
+table td {
+  width: 30%;
+  text-align: center;
+}
+table td:first-child {
+  width: 10%;
+}
+table th {
+  text-align: center;
+}
+</style>
+
 # Program
 
 We are still developing the program based on submissions for the different calls. Check back periodically for updates.
@@ -29,6 +69,53 @@ summit beginning one half hour after the last session.
 <hr>
 ### Day 1
 
+<table>
+<tr><td /><th colspan="3">August 1st</th></tr>
+<tr><td /><th>Lecture Hall</th><th>Multipurpose Room</th><th>Silverman Skyline</th></tr>
+<tr><td>8:30</td><td class="break" rowspan="2" colspan="3">Registration/Check-In/Breakfast</td></tr>
+<tr><td>8:45</td></tr>
+<tr><td>9:00</td><td>Welcome</td><td class="none" colspan="2" rowspan="8"></td></tr>
+<tr><td>9:15</td><td class="panel" rowspan="3">Original Google Team Panel</td></tr>
+<tr><td>9:30</td></tr>
+<tr><td>9:45</td></tr>
+<tr><td>10:00</td><td class="keynote" rowspan="4">Keynote: Daniel Lai</td></tr>
+<tr><td>10:15</td></tr>
+<tr><td>10:30</td></tr>
+<tr><td>10:45</td></tr>
+<tr><td>11:00</td><td class="break" colspan="3" rowspan="2">Coffee Break</td></tr>
+<tr><td>11:15</td></tr>
+<tr><td>11:30</td><td class="present" rowspan="4">Presentations</td><td class="workshop" rowspan="4">Intro to App Inventor</td><td class="hackathon" rowspan="4">Hackathon</td></tr>
+<tr><td>11:45</td></tr>
+<tr><td>12:00</td></tr>
+<tr><td>12:15</td></tr>
+<tr><td>12:30</td><td class="break" colspan="3" rowspan="4">Lunch</td></tr>
+<tr><td>12:45</td></tr>
+<tr><td>13:00</td></tr>
+<tr><td>13:15</td></tr>
+<tr><td>13:30</td><td class="present" rowspan="6">Presentations</td><td class="workshop" rowspan="6">Workshop: How to utilize Extensions and Connect External Hardware in App Inventor</td><td class="hackathon" rowspan="6">Hackathon</td></tr>
+<tr><td>13:45</td></tr>
+<tr><td>14:00</td></tr>
+<tr><td>14:15</td></tr>
+<tr><td>14:30</td></tr>
+<tr><td>14:45</td></tr>
+<tr><td>15:00</td><td class="break" rowspan="2" colspan="3">Coffee Break</td></tr>
+<tr><td>15:15</td></tr>
+<tr><td>15:30</td><td class="birds" rowspan="8">Birds of a Feather</td><td class="workshop" rowspan="8">Workshop: How to utilize Extensions and Connect External Hardware in App Inventor</td><td class="hackathon" rowspan="8">Hackathon</td></tr>
+<tr><td>15:45</td></tr>
+<tr><td>16:00</td></tr>
+<tr><td>16:15</td></tr>
+<tr><td>16:30</td></tr>
+<tr><td>16:45</td></tr>
+<tr><td>17:00</td></tr>
+<tr><td>17:15</td></tr>
+<tr><td>17:30</td><td class="none" colspan="3" rowspan="2" /></tr>
+<tr><td>17:45</td></tr>
+<tr><td>18:00</td><td colspan="3" rowspan="4">Youth Mobile Power App Challenge Awards Ceremony and Reception</td></tr>
+<tr><td>18:15</td></tr>
+<tr><td>18:30</td></tr>
+<tr><td>18:45</td></tr>
+</table>
+
 #### Morning
 
 *Breakfast (8:30-9:00)*
@@ -38,12 +125,14 @@ Session 1 (9:00-11:00):
 * Welcome by Hal Abelson, Class of 1922 Professor of EECS, MIT, and co-creator of App Inventor
 * Panel Discussion: Google App Inventor team members
 * Keynote Speaker: Daniel Lai, Program Director, CoolThink @ JC
-* Hackathon
 
 Session 2 (11:30-12:30):
 
 * Hackathon (all day)
+* Beginners workshop
 * Presentation Session 1
+  * Michelle Sun: "5 Lessons Learned from Teaching 10,000 Kids to Code"
+  * Johannes Kretzschmar, Lucas Geitel, and Matthias Müller: "Deliberating and Programming Digital Media - Two sides of the same coin"
 
 #### Afternoon
 
@@ -54,6 +143,9 @@ Session 3 (13:30-15:00):
 * Hackathon (continued)
 * Workshop: How to utilize extensions and connect external hardware in App Inventor
 * Presentation Session 2
+  * Haksung Kim: The Impact of MIT App Inventor on Korea
+  * Tommie Lo: Nomad Hackathon - Re-designed code learning to programming for good
+  * Pam O'Brien, Natasha Kiely, and Julie Power: "A pedagogical experience with Wearable Technologies using MIT App Inventor and BBC Micro:bit. The development of the App Inventor Micro:Fit"
 
 Session 4 (15:30-17:30):
 
@@ -66,20 +158,65 @@ Session 4 (15:30-17:30):
 <hr>
 ### Day 2
 
+<table>
+<tr><td /><th colspan="3">August 2nd</th></tr>
+<tr><td /><th>Lecture Hall</th><th>Multipurpose Room</th><th>Silverman Skyline</th></tr>
+<tr><td>8:30</td><td class="break" rowspan="2" colspan="3">Breakfast</td></tr>
+<tr><td>8:45</td></tr>
+<tr><td>9:00</td><td class="panel" rowspan="3"> Sneak Peek at Upcoming Features with the Development Team </td><td class="none" colspan="2" rowspan="6"></td></tr>
+<tr><td>9:15</td></tr>
+<tr><td>9:30</td></tr>
+<tr><td>9:45</td><td class="panel" rowspan="3">Education Panel: Pedagogy with MIT App Inventor</td></tr>
+<tr><td>10:00</td></tr>
+<tr><td>10:15</td></tr>
+<tr><td>10:30</td><td class="break" colspan="3" rowspan="2">Coffee Break</td></tr>
+<tr><td>10:45</td></tr>
+<tr><td>11:00</td><td class="present" rowspan="6">Presentations</td><td class="workshop" rowspan="6"> Workshop: Hacking Healthcare with MIT APP Inventor </td><td class="hackathon" rowspan="6">Hackathon (continued)</td></tr>
+<tr><td>11:15</td></tr>
+<tr><td>11:30</td></tr>
+<tr><td>11:45</td></tr>
+<tr><td>12:00</td></tr>
+<tr><td>12:15</td></tr>
+<tr><td>12:30</td><td class="break" colspan="3" rowspan="4">Lunch</td></tr>
+<tr><td>12:45</td></tr>
+<tr><td>13:00</td></tr>
+<tr><td>13:15</td></tr>
+<tr><td>13:30</td><td class="present" rowspan="6">Presentations</td><td class="workshop" rowspan="6"> Workshop: Hacking Healthcare with MIT APP Inventor </td><td rowspan="6">Poster Session</td></tr>
+<tr><td>13:45</td></tr>
+<tr><td>14:00</td></tr>
+<tr><td>14:15</td></tr>
+<tr><td>14:30</td></tr>
+<tr><td>14:45</td></tr>
+<tr><td>15:00</td><td class="break" rowspan="2" colspan="3">Coffee Break</td></tr>
+<tr><td>15:15</td></tr>
+<tr><td>15:30</td><td rowspan="2">Lightning Talks</td><td class="none" colspan="2" rowspan="2"></td></tr>
+<tr><td>15:45</td></tr>
+<tr><td>16:00</td><td class="demos" rowspan="6">Demo Session</td><td class="workshop" rowspan="6">Workshop: Hacking Healthcare with MIT APP Inventor</td><td rowspan="6">Poster Session</td></tr>
+<tr><td>16:15</td></tr>
+<tr><td>16:30</td></tr>
+<tr><td>16:45</td></tr>
+<tr><td>17:00</td></tr>
+<tr><td>17:15</td></tr>
+</table>
+
 #### Morning
 
 *Breakfast (8:30-9:30)*
 
 Session 1 (09:00-10:30)
 
-* Show & Tell with the Development Team: New Feature, Future Directions, Q&A
-* Education Panel: App Inventor Pedagogy
+* Sneak Peek at Upcoming Features with the Development Team
+* Education Panel: Pedagogy with MIT App Inventor
 
 Session 2 (11:00-12:30)
 
 * Workshop: Low Cost Health Devices and Apps
 * Hackathon (continued)
 * Presentation Session 3
+  * Tommy Heng: Programming Alexa with App Inventor
+  * Nichole Clarke: Augmented Reality with App Inventor
+  * Jeffrey Kim & Murielle Dunand: Introduction to the Look Extension
+  * Natalie Lao: Machine Learning with App Inventor
 
 #### Afternoon
 
@@ -90,16 +227,51 @@ Session 3 (13:30-15:00)
 * Workshop (continued)
 * Setup for poster session
 * Presentation Session 4
+  * Ingrid Roche: "App Inventor in the field: Pedagogical experiences and results"
+  * Jere Boudell: "The biology code: increasing technological literacy in undergraduate biology majors using MIT App Inventor"
+  * Lyn Turbak: "Lessons from the Wild: What We've Learned from Analyzing Millions of App Inventor Programs"
 
 Session 4 (15:30-17:30)
 
 * Lightning Talks
 * Workshop (continued)
 * Poster Session
-* Presentation Session 5
+* Tech Demo Session
 
 <hr>
 ### Day 3
+
+<table>
+<tr><td /><th colspan="2">August 3rd</th></tr>
+<tr><td /><th>Lecture Hall</th><th>Multipurpose Room</th></tr>
+<tr><td>9:00</td><td class="break" rowspan="2" colspan="2">Breakfast</td></tr>
+<tr><td>9:15</td></tr>
+<tr><td>9:30</td><td class="keynote" rowspan="4">Keynote: Lissa Soep</td><td class="none" rowspan="4"></td></tr>
+<tr><td>9:45</td></tr>
+<tr><td>10:00</td></tr>
+<tr><td>10:15</td></tr>
+<tr><td>10:30</td><td class="break" colspan="3" rowspan="2">Coffee Break</td></tr>
+<tr><td>10:45</td></tr>
+<tr><td>11:00</td><td class="workshop" rowspan="6">Workshop: The Mobile CSP Computer Science Principles Curriculum</td><td class="workshop" rowspan="6">Workshop: A practical introduction to Internet of Things(IOT) using MIT App Inventor and Micro:bit</td></tr>
+<tr><td>11:15</td></tr>
+<tr><td>11:30</td></tr>
+<tr><td>11:45</td></tr>
+<tr><td>12:00</td></tr>
+<tr><td>12:15</td></tr>
+<tr><td>12:30</td><td class="break" colspan="2" rowspan="4">Lunch</td></tr>
+<tr><td>12:45</td></tr>
+<tr><td>13:00</td></tr>
+<tr><td>13:15</td></tr>
+<tr><td>13:30</td><td class="workshop" rowspan="6">Workshop: The Mobile CSP Computer Science Principles Curriculum</td><td class="workshop" rowspan="6">Workshop: A practical introduction to Internet of Things(IOT) using MIT App Inventor and Micro:bit</td></tr>
+<tr><td>13:45</td></tr>
+<tr><td>14:00</td></tr>
+<tr><td>14:15</td></tr>
+<tr><td>14:30</td></tr>
+<tr><td>14:45</td></tr>
+<tr><td>15:00</td><td rowspan="2">Closing Ceremonies</td><td class="none" rowspan="2"></td></tr>
+<tr><td>15:15</td></tr>
+</table>
+
 
 #### Morning
 
@@ -113,7 +285,6 @@ Session 2 (11:00-12:30)
 
 * Workshop: A practical introduction to Internet of Things(IOT) using MIT App Inventor and Micro:bit
 * Workshop: The Mobile CSP Computer Science Principles Curriculum
-* Presentation Session 6
 
 #### Afternoon
 
@@ -122,7 +293,6 @@ Session 2 (11:00-12:30)
 Session 3 (13:30-15:30):
 
 * Workshops (continued)
-* Presentation Session 7
 * Award and Closing Ceremonies
 
 *The Summit ends earlier on the third day in order to accomodate visitors travel needs.*
