@@ -110,10 +110,12 @@ summit beginning one half hour after the last session.
 <tr><td>17:15</td></tr>
 <tr><td>17:30</td><td class="none" colspan="3" rowspan="2" /></tr>
 <tr><td>17:45</td></tr>
-<tr><td>18:00</td><td colspan="3" rowspan="4">Youth Mobile Power App Challenge Awards Ceremony and Reception</td></tr>
+<tr><td>18:00</td><td colspan="3" rowspan="6">Youth Mobile Power App Challenge Awards Ceremony and Reception</td></tr>
 <tr><td>18:15</td></tr>
 <tr><td>18:30</td></tr>
 <tr><td>18:45</td></tr>
+<tr><td>19:00</td></tr>
+<tr><td>19:15</td></tr>
 </table>
 
 #### Morning
