@@ -42,6 +42,22 @@ table td:first-child {
 table th {
   text-align: center;
 }
+@media only print {
+table th, table td {
+padding: 0;
+font-size: 10pt;
+}
+hr, footer {
+display: none;
+}
+table td:not(:first-child) {
+padding: 4pt;
+}
+.none {
+background-color: #ccc;
+}
+.breakrow { display: none; }
+}
 </style>
 
 # Program
@@ -65,8 +81,10 @@ reception with cash bar will also be held on the first day of the
 summit beginning one half hour after the last session.
 
 <div class="program" markdown="1">
+<div class="page" markdown="1">
 
 <hr>
+
 ### Day 1
 
 <table>
@@ -108,8 +126,8 @@ summit beginning one half hour after the last session.
 <tr><td>16:45</td></tr>
 <tr><td>17:00</td></tr>
 <tr><td>17:15</td></tr>
-<tr><td>17:30</td><td class="none" colspan="3" rowspan="2" /></tr>
-<tr><td>17:45</td></tr>
+<tr class="breakrow"><td>17:30</td><td class="none" colspan="3" rowspan="2" /></tr>
+<tr class="breakrow"><td>17:45</td></tr>
 <tr><td>18:00</td><td colspan="3" rowspan="6">Youth Mobile Power App Challenge Awards Ceremony and Reception</td></tr>
 <tr><td>18:15</td></tr>
 <tr><td>18:30</td></tr>
@@ -117,6 +135,9 @@ summit beginning one half hour after the last session.
 <tr><td>19:00</td></tr>
 <tr><td>19:15</td></tr>
 </table>
+</div>
+
+<div class="page" markdown="1">
 
 #### Morning
 
@@ -155,9 +176,13 @@ Session 4 (15:30-17:30):
 * Workshop (continued)
 * Birds of a Feather sessions
 
-*Reception (18:00-)*
+*Reception (18:00-19:30)*
+
+</div>
+<div class="page" markdown="1">
 
 <hr>
+
 ### Day 2
 
 <table>
@@ -200,6 +225,8 @@ Session 4 (15:30-17:30):
 <tr><td>17:00</td></tr>
 <tr><td>17:15</td></tr>
 </table>
+</div>
+<div class="page" markdown="1">
 
 #### Morning
 
@@ -240,6 +267,9 @@ Session 4 (15:30-17:30)
 * Poster Session
 * Tech Demo Session
 
+</div>
+<div class="page" markdown="1">
+
 <hr>
 ### Day 3
 
@@ -273,7 +303,8 @@ Session 4 (15:30-17:30)
 <tr><td>15:00</td><td rowspan="2">Closing Ceremonies</td><td class="none" rowspan="2"></td></tr>
 <tr><td>15:15</td></tr>
 </table>
-
+</div>
+<div class="page" markdown="1">
 
 #### Morning
 
@@ -303,6 +334,8 @@ Session 3 (13:30-15:30):
 
 </div>
 
+</div>
+
 ## Keynote Speakers
 
 ![Daniel Lai](assets/images/daniel-lai.jpg)
@@ -323,6 +356,8 @@ Daniel contributed significantly in promoting the development and application of
 
 Elisabeth (Lissa) Soep is Executive Producer for Journalism and Founding Director of the Innovation Lab at YR Media (formerly Youth Radio), the Oakland-based national network for next-generation news and arts. YR stories Lissa has produced with teen reporters have been recognized with honors including two Peabody Awards, five Murrow Awards, an Investigative Reporters and Editors Award, two Third Coast International Audio Festival Awards, and the Robert F. Kennedy Journalism Award. With a PhD from Stanford University’s School of Education, Lissa has written about digital media and learning for academic journals, popular outlets (NPR, Boing Boing), and books including Youthscapes (with Maira, UPenn Press), Drop that Knowledge (with Chávez, UC Press), and Participatory Politics (MIT Press). With Asha Richardson, she founded YR’s Innovation Lab, a partnership with MIT and Cornell Tech that was among the first community-based initiatives in the US to teach teens to code, and the first embedded in a newsroom. Her work as a writer, producer, and editor has been featured on NPR, the New York Times, The Atlantic/CityLab, and Teen Vogue. In 2011, she became one of six members of the MacArthur Foundation’s Youth and Participatory Politics Research Network, which explored how young people use digital and social media to express civic voice and agency. For more than ten years, Lissa served on the Board of Directors of the United States’ premier youth poetry organization, Youth Speaks.
 
+<div class="page"></div>
+
 ## Panels
 
 ### Meet the Original Google Team
@@ -339,13 +374,15 @@ Lead Developer Evan Patton will demonstrate upcoming features for MIT App Invent
 
 Karen Lang and Selim Tezel of the education team will participate in a discussion about curriculum development at MIT.
 
+<div class="page"></div>
+
 ## Workshops
 
 Attendees of the MIT App Inventor Summit 2019 will be able to participate for free in any of the following workshops taking place over the course of the three days of  getthe summit.
 
 ### MIT App Inventor Hackathon
 
-*Lead by Jere Boudell, Clayton State University*
+*Led by Jere Boudell, Clayton State University*
 
 Show off your app building skills by participating in an all day hackathon with MIT App Inventor. The first part of the hackathon will include ideation and team formation. Teams will have the remainder of the first day and a portion of the second day to design and build their apps.
 
@@ -365,9 +402,11 @@ Teams that participate in this workshop will have an opportunity to share their 
 
 Participants will need a computer and an Android enabled phone for the building and hacking portions of this activity.
 
+<div class="page"></div>
+
 ### The Mobile CSP Computer Science Principles Curriculum
 
-*Lead by Beryl Hoffman<sup>1</sup> and Pauline Lake<sup>2</sup>, <sup>1</sup>Elms College and <sup>2</sup>College of St. Scholastica*
+*Led by Beryl Hoffman<sup>1</sup> and Pauline Lake<sup>2</sup>, <sup>1</sup>Elms College and <sup>2</sup>College of St. Scholastica*
 
 The Mobile CS Principles (Mobile CSP) curriculum, using MIT App Inventor, is one of the NSF-supported, College Board-endorsed curricula for the new AP Computer Science Principles (CSP) course. Since 2013, the Mobile CSP project has trained more than 700 teachers, and the course has been offered to more than 20,000 students with great success on the AP exam. Mobile CSP’s goal is to provide engaging introductory high-school CS curriculum to increase students’ interest in further study and possible careers in CS, especially for those who are traditionally underrepresented in CS. Mobile CSP uses MIT App Inventor with the motto “Teach them where they live” -- on their smartphones! The curriculum engages students by encouraging them to build creative, socially-useful mobile apps that solve real-world problems in their own communities.
 
@@ -384,9 +423,11 @@ Agenda (3 hours):
 5. Q & A Panel: Bringing the course to your school (20 minutes)
 6. Professional Development information and wrap up (10 minutes)
 
+<div class="page"></div>
+
 ### How to Utilise Extensions and Connect External Hardware in App Inventor
 
-*Lead by Queena Ling, Preface Nomad*
+*Led by Queena Ling, Preface Nomad*
 
 **Workshop Objectives**
 
@@ -419,13 +460,15 @@ It is a three hour workshop that will include the following:
 
 ### A Practical Introduction to Internet of Things (IOT) Using MIT App Inventor and Micro:bit
 
-*Lead by Natasha Kiely<sup>1</sup>, Julie Power<sup>2</sup>, and Pamela O'Brien<sup>1</sup>, <sup>1</sup>Limerick Institute of Technology and <sup>2</sup>Lero*
+*Led by Natasha Kiely<sup>1</sup>, Julie Power<sup>2</sup>, and Pamela O'Brien<sup>1</sup>, <sup>1</sup>Limerick Institute of Technology and <sup>2</sup>Lero*
 
 With the number of connected devices in use worldwide now exceeding 17 billion and the number of connected Internet of Things(IOT) devices estimated to reach 10 billion by 2020, educators and students alike have an increased awareness and appetite to explore developments and careers in this sector.
 
 The aim of this workshop is to explore Internet of Things(IOT), the concepts, technologies and applications that are possible through the use of Mobile Applications and Micro-controllers. The workshop will take participants through a hands on experience in IOT design and development using App Inventor and Micro:Bit technologies. It will explore the needs and requirements of today’s society, looking at solving real world problems. A variety of IOT key themes will be demonstrated and developed such as Smart Health,Smart Cities, Smart Homes, Smart Cars, Smart Farming, Smart Buildings, Smart Appliances and Wearable technologies.
 
 Participants will work in teams,collaborating through the use of shared technologies and Maker Education practices. Ideas will be shared and coded providing teachers with a wealth of knowledge, experience and practical materials that can be disseminated directly into their classrooms. Experiences will be gained and demonstrated, with workshop tutors identifying the key strengths of content delivery and indeed the pitfalls to avoid during live classroom lessons and activities. This knowledge has been acquired from experience gained by workshop facilitators in the development of IOT applications delivered to Irish educators and students across all levels of the Irish Education System.
+
+<div class="page"></div>
 
 ## Other Events
 
