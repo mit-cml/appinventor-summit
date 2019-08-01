@@ -29,6 +29,9 @@ development team as well as current team members
 - Networking reception
 
 
+__[Click here to download a PDF version of the program](/assets/images/program.pdf)__
+
+
 ## Youth Mobile Power Programming Competition
 
 A highlight of the summit will be the official recognition of the winners of the Youth Mobile
