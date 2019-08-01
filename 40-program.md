@@ -175,6 +175,9 @@ Session 4 (15:30-17:30):
 * Hackathon (continued)
 * Workshop (continued)
 * Birds of a Feather sessions
+  * Cross-platform programming - Mark Friedman
+  * How to create an App Inventor extension - Evan Patton
+  * Curriculum development - Pauline Lake
 
 *Reception (18:00-19:30)*
 
