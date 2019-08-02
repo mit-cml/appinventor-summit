@@ -31,6 +31,8 @@ development team as well as current team members
 
 __[Click here to download a PDF version of the program](/assets/images/program.pdf)__
 
+__[Click here to access the read-only resources document for participants](https://docs.google.com/document/d/e/2PACX-1vTIumUlgwHKGFyHBj-62G6DXwmy126aNlxlvmGRv4eBYFK6n8DxmhmfwLDsCS6-cPnFlwAuQvmIg0it/pub)__
+
 
 ## Youth Mobile Power Programming Competition
 
