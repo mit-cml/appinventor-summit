@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIT App Inventor Global Education Summit 2026</title>
+  <meta name="description" content="Join educators, developers, and innovators at the MIT App Inventor Global Education Summit, July 6–8, 2026 at the Stata Center on MIT's campus.">
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --mit-red: #A31F34;
+      --mit-red-dark: #8A1A2C;
+      --charcoal: #2D2D2D;
+      --gray-dark: #555;
+      --gray-medium: #777;
+      --gray-light: #F5F5F5;
+      --white: #FFFFFF;
+      --nav-height: 60px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--nav-height);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--charcoal);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    a {
+      color: var(--mit-red);
+    }
+
+    a:hover {
+      color: var(--mit-red-dark);
+    }
+
+    /* Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      border-bottom: 2px solid var(--mit-red);
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
+
+    .nav-brand {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--mit-red);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--charcoal);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--charcoal);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--mit-red);
+    }
+
+    /* Sections */
+    .section {
+      padding: 4rem 1.5rem;
+    }
+
+    .section--gray {
+      background: var(--gray-light);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--charcoal);
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--gray-dark);
+      margin-bottom: 2rem;
+    }
+
+    /* Hero */
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(163, 31, 52, 0.60) 0%, rgba(138, 26, 44, 0.65) 100%),
+        url('/MITAIEduSummit2025_HalPresenting_SideView.JPG') center/cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      padding: 6rem 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .hero .tagline {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .details {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s, transform 0.1s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn--white {
+      background: var(--white);
+      color: var(--mit-red);
+    }
+
+    .btn--white:hover {
+      background: #f0f0f0;
+    }
+
+    .btn--red, .nav-links a.btn--red {
+      background: var(--mit-red);
+      color: var(--white);
+    }
+
+    .btn--red:hover {
+      background: var(--mit-red-dark);
+    }
+
+    /* Schedule Grid */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .schedule-day {
+      background: var(--white);
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      border-top: 4px solid var(--mit-red);
+    }
+
+    .schedule-day h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .schedule-day .date {
+      font-size: 0.9rem;
+      color: var(--gray-medium);
+      margin-bottom: 0.75rem;
+    }
+
+    .schedule-day ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .schedule-day li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.95rem;
+    }
+
+    .schedule-day li:last-child {
+      border-bottom: none;
+    }
+
+    /* Speaker Cards */
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .speaker-card {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: var(--gray-light);
+      border-radius: 8px;
+    }
+
+    .speaker-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--gray-medium);
+    }
+
+    .speaker-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .speaker-card p {
+      font-size: 0.85rem;
+      color: var(--gray-medium);
+    }
+
+    /* Venue */
+    .venue-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .venue-details h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .venue-details p {
+      margin-bottom: 0.75rem;
+      color: var(--gray-dark);
+    }
+
+    .venue-details ul {
+      padding-left: 1.25rem;
+      color: var(--gray-dark);
+    }
+
+    .venue-details li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .faq-item h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+      color: var(--charcoal);
+    }
+
+    .faq-item p {
+      color: var(--gray-dark);
+      font-size: 0.95rem;
+    }
+
+    /* Sponsors */
+    .sponsor-tiers {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .sponsor-tier h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: var(--mit-red);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .sponsor-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .sponsor-placeholder {
+      width: 150px;
+      height: 60px;
+      background: #e8e8e8;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: var(--gray-medium);
+    }
+
+    /* CTA Section */
+    .cta {
+      background: var(--mit-red);
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--charcoal);
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    .footer a {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (min-width: 640px) {
+      .schedule-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .venue-info {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3.25rem;
+      }
+
+      .section {
+        padding: 5rem 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        border-bottom: 2px solid var(--mit-red);
+        gap: 0.75rem;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-brand" href="/">MIT App Inventor Global Education Summit 2026</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#schedule">Schedule</a></li>
+      <li><a href="/#speakers">Speakers</a></li>
+      <li><a href="/#venue">Venue</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/#sponsors">Sponsors</a></li>
+      <li><a href="/call-for-papers">Submit</a></li>
+      <li><a href="https://mit.networkforgood.com/events/99722-mit-app-inventor-s-global-education-summit" class="btn btn--red" style="padding: 0.5rem 1rem; font-size: 0.85rem;" target="_blank" rel="noopener">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+<section id="hero" class="hero">
+  <div class="container">
+    <h1>MIT App Inventor<br>Global Education Summit 2026</h1>
+    <p class="tagline">Empowering the next generation of creators through mobile computing education</p>
+    <p class="details">July 6&ndash;8, 2026 &middot; Stata Center (Building 32) &middot; MIT Campus, Cambridge, MA</p>
+    <a href="https://mit.networkforgood.com/events/99722-mit-app-inventor-s-global-education-summit" class="btn btn--white" target="_blank" rel="noopener">Register Now</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About the Summit</h2>
+    <p class="section-subtitle">Three days of learning, sharing, and building together</p>
+    <p>
+      The MIT App Inventor Global Education Summit brings together educators,
+      researchers, developers, and students from around the world to explore the
+      future of computing education. Now in its latest edition, the summit
+      showcases innovative teaching practices, cutting-edge research, and
+      inspiring stories of how App Inventor is transforming classrooms globally.
+    </p>
+    <p style="margin-top: 1rem;">
+      <a href="https://appinventor.mit.edu" target="_blank" rel="noopener">MIT App Inventor</a>
+      is a free, blocks-based programming environment that makes it easy for
+      anyone&mdash;even beginners&mdash;to build fully functional apps for
+      Android and iOS devices. Since its launch, millions of users in over 195
+      countries have created more than 70 million apps.
+    </p>
+  </div>
+</section>
+
+<!-- Schedule -->
+<section id="schedule" class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Schedule Overview</h2>
+    <p class="section-subtitle">A detailed schedule will be posted closer to the event</p>
+    <div class="schedule-grid">
+
+      <div class="schedule-day">
+        <h3>Day 1:</h3>
+        <p class="date">Monday, July 6</p>
+        <ul>
+          <li>Morning registration &amp; welcome</li>
+          <li>Keynote &amp; invited talks</li>
+          <li>Paper presentations</li>
+          <li>Hands-on workshops</li>
+          <li>Hackathon</li>
+          <li>MIT App Inventor PD workshop</li>
+        </ul>
+      </div>
+
+      <div class="schedule-day">
+        <h3>Day 2:</h3>
+        <p class="date">Tuesday, July 7</p>
+        <ul>
+          <li>Keynote</li>
+          <li>Global Appathon showcase</li>
+          <li>Responsible AI implementation panel</li>
+          <li>Paper presentations</li>
+          <li>Poster &amp; demo session</li>
+          <li>Hackathon</li>
+        </ul>
+      </div>
+
+      <div class="schedule-day">
+        <h3>Day 3:</h3>
+        <p class="date">Wednesday, July 8</p>
+        <ul>
+          <li>Posters &amp; hackathon lightning talks</li>
+          <li>Caring &amp; community building panel</li>
+          <li>Award ceremony</li>
+          <li>Closing remarks</li>
+          <li>Limited MIT group tours (preregistration required)</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Speakers -->
+<section id="speakers" class="section">
+  <div class="container">
+    <h2 class="section-title">Speakers</h2>
+    <p class="section-subtitle">Keynote and featured speakers will be announced soon</p>
+    <!--
+    <div class="speakers-grid">
+
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <h3>Keynote Speaker</h3>
+        <p>To be announced</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <h3>Featured Speaker</h3>
+        <p>To be announced</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <h3>Featured Speaker</h3>
+        <p>To be announced</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <h3>Featured Speaker</h3>
+        <p>To be announced</p>
+      </div>
+
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- Venue & Travel -->
+<section id="venue" class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Venue &amp; Travel</h2>
+    <p class="section-subtitle">Join us at MIT's iconic Stata Center</p>
+    <div class="venue-info">
+
+      <div class="venue-details">
+        <h3>Building 32 &mdash; Stata Center</h3>
+        <p>
+          The Ray and Maria Stata Center is home to MIT's Computer Science and
+          Artificial Intelligence Laboratory (CSAIL). Designed by Frank Gehry,
+          it is one of the most recognizable buildings on campus.
+        </p>
+        <p>
+          <strong>Address:</strong><br>
+          32 Vassar Street<br>
+          Cambridge, MA 02139
+        </p>
+      </div>
+
+      <div class="venue-details">
+        <h3>Getting Here</h3>
+        <ul>
+          <li><strong>By air:</strong> Boston Logan International Airport (BOS), ~15 min by taxi/rideshare</li>
+          <li><strong>By subway:</strong> MBTA Red Line to Kendall/MIT station, 10-minute walk</li>
+          <li><strong>By car:</strong> Paid parking available in nearby MIT garages</li>
+          <li><strong>Hotels:</strong> Several options within walking distance in Kendall Square and Central Square</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3>Who should attend?</h3>
+        <p>
+          The summit is designed for educators, policymakers,
+          instructional designers, researchers, students, and anyone passionate
+          about computing education and mobile app development.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do I need programming experience?</h3>
+        <p>
+          No! The summit offers sessions for all levels, from absolute beginners
+          to advanced developers. Day 1 workshops are specifically tailored to
+          different experience levels.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Will sessions be recorded?</h3>
+        <p>
+          Select keynotes and talks will be recorded and made available after the event.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I present or lead a session?</h3>
+        <p>
+          Yes! See our <a href="/call-for-papers">Call for Papers</a>
+          for details on submitting papers and posters. Follow
+          <a href="https://appinventor.mit.edu" target="_blank" rel="noopener">MIT App Inventor</a>
+          for announcements.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Sponsors -->
+<section id="sponsors" class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Sponsors</h2>
+    <p class="section-subtitle">Interested in sponsoring? <a href="mailto:mit-app-inventor-collaboration@mit.edu?subject=Summit%20sponsorship%20opportunities">Get in touch</a></p>
+    <!--
+    <div class="sponsor-tiers">
+
+      <div class="sponsor-tier">
+        <h3>Platinum</h3>
+        <div class="sponsor-logos">
+          <div class="sponsor-placeholder">Your Logo Here</div>
+          <div class="sponsor-placeholder">Your Logo Here</div>
+        </div>
+      </div>
+
+      <div class="sponsor-tier">
+        <h3>Gold</h3>
+        <div class="sponsor-logos">
+          <div class="sponsor-placeholder">Your Logo Here</div>
+          <div class="sponsor-placeholder">Your Logo Here</div>
+          <div class="sponsor-placeholder">Your Logo Here</div>
+        </div>
+      </div>
+
+      <div class="sponsor-tier">
+        <h3>Community</h3>
+        <div class="sponsor-logos">
+          <div class="sponsor-placeholder">Your Logo Here</div>
+          <div class="sponsor-placeholder">Your Logo Here</div>
+          <div class="sponsor-placeholder">Your Logo Here</div>
+          <div class="sponsor-placeholder">Your Logo Here</div>
+        </div>
+      </div>
+
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- Registration CTA -->
+<section id="register" class="cta">
+  <div class="container">
+    <h2>Ready to Join Us?</h2>
+    <p>Secure your spot at the MIT App Inventor Global Education Summit 2026.</p>
+    <a href="https://mit.networkforgood.com/events/99722-mit-app-inventor-s-global-education-summit" class="btn btn--white" target="_blank" rel="noopener">Register Now</a>
+  </div>
+</section>
+
+
+  <!-- Logos -->
+  <section class="section" style="padding: 2.5rem 1.5rem;">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+      <img src="/mitappinventor_logo_horiz_textcolor.png" alt="MIT App Inventor" style="height: 60px; width: auto;">
+      <img src="/appinventorfoundation_horiz_transparent.png" alt="App Inventor Foundation" style="height: 60px; width: auto;">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 <a href="https://appinventor.mit.edu" target="_blank" rel="noopener">MIT App Inventor</a>. All rights reserved.</p>
+      <p style="margin-top: 0.5rem;">Massachusetts Institute of Technology &middot; 77 Massachusetts Ave, Cambridge, MA 02139</p>
+      <p><a href="https://accessibility.mit.edu" target="_blank">Accessibility</a>
+    </div>
+  </footer>
+
+</body>
+</html>

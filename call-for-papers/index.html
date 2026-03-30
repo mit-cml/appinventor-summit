@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call for Papers — MIT App Inventor Summit 2026</title>
+  <meta name="description" content="Join educators, developers, and innovators at the MIT App Inventor Global Education Summit, July 6–8, 2026 at the Stata Center on MIT's campus.">
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --mit-red: #A31F34;
+      --mit-red-dark: #8A1A2C;
+      --charcoal: #2D2D2D;
+      --gray-dark: #555;
+      --gray-medium: #777;
+      --gray-light: #F5F5F5;
+      --white: #FFFFFF;
+      --nav-height: 60px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--nav-height);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--charcoal);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    a {
+      color: var(--mit-red);
+    }
+
+    a:hover {
+      color: var(--mit-red-dark);
+    }
+
+    /* Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      border-bottom: 2px solid var(--mit-red);
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
+
+    .nav-brand {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--mit-red);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--charcoal);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--charcoal);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--mit-red);
+    }
+
+    /* Sections */
+    .section {
+      padding: 4rem 1.5rem;
+    }
+
+    .section--gray {
+      background: var(--gray-light);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--charcoal);
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--gray-dark);
+      margin-bottom: 2rem;
+    }
+
+    /* Hero */
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(163, 31, 52, 0.60) 0%, rgba(138, 26, 44, 0.65) 100%),
+        url('/MITAIEduSummit2025_HalPresenting_SideView.JPG') center/cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      padding: 6rem 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .hero .tagline {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .details {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s, transform 0.1s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn--white {
+      background: var(--white);
+      color: var(--mit-red);
+    }
+
+    .btn--white:hover {
+      background: #f0f0f0;
+    }
+
+    .btn--red, .nav-links a.btn--red {
+      background: var(--mit-red);
+      color: var(--white);
+    }
+
+    .btn--red:hover {
+      background: var(--mit-red-dark);
+    }
+
+    /* Schedule Grid */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .schedule-day {
+      background: var(--white);
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      border-top: 4px solid var(--mit-red);
+    }
+
+    .schedule-day h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .schedule-day .date {
+      font-size: 0.9rem;
+      color: var(--gray-medium);
+      margin-bottom: 0.75rem;
+    }
+
+    .schedule-day ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .schedule-day li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.95rem;
+    }
+
+    .schedule-day li:last-child {
+      border-bottom: none;
+    }
+
+    /* Speaker Cards */
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .speaker-card {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: var(--gray-light);
+      border-radius: 8px;
+    }
+
+    .speaker-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--gray-medium);
+    }
+
+    .speaker-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .speaker-card p {
+      font-size: 0.85rem;
+      color: var(--gray-medium);
+    }
+
+    /* Venue */
+    .venue-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .venue-details h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .venue-details p {
+      margin-bottom: 0.75rem;
+      color: var(--gray-dark);
+    }
+
+    .venue-details ul {
+      padding-left: 1.25rem;
+      color: var(--gray-dark);
+    }
+
+    .venue-details li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .faq-item h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+      color: var(--charcoal);
+    }
+
+    .faq-item p {
+      color: var(--gray-dark);
+      font-size: 0.95rem;
+    }
+
+    /* Sponsors */
+    .sponsor-tiers {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .sponsor-tier h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: var(--mit-red);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .sponsor-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .sponsor-placeholder {
+      width: 150px;
+      height: 60px;
+      background: #e8e8e8;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: var(--gray-medium);
+    }
+
+    /* CTA Section */
+    .cta {
+      background: var(--mit-red);
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--charcoal);
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    .footer a {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (min-width: 640px) {
+      .schedule-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .venue-info {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3.25rem;
+      }
+
+      .section {
+        padding: 5rem 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        border-bottom: 2px solid var(--mit-red);
+        gap: 0.75rem;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-brand" href="/">MIT App Inventor Global Education Summit 2026</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#schedule">Schedule</a></li>
+      <li><a href="/#speakers">Speakers</a></li>
+      <li><a href="/#venue">Venue</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/#sponsors">Sponsors</a></li>
+      <li><a href="/call-for-papers">Submit</a></li>
+      <li><a href="https://mit.networkforgood.com/events/99722-mit-app-inventor-s-global-education-summit" class="btn btn--red" style="padding: 0.5rem 1rem; font-size: 0.85rem;" target="_blank" rel="noopener">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+<section class="hero" style="padding: 4rem 1.5rem;">
+  <div class="container">
+    <h1>Call for Papers</h1>
+    <p class="tagline">Share your work at the MIT App Inventor Global Education Summit 2026</p>
+    <p class="details">Submission deadline: May 4, 2026 at 11:59 PM EDT</p>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Overview</h2>
+    <p>
+      The MIT App Inventor Global Education Summit invites paper and poster submissions on computing and AI education.
+      Presenters of accepted papers and posters must register for and present in-person at the Summit.
+    </p>
+    <p style="margin-top: 1rem; color: var(--gray-dark);">
+      Chaired by Dr. Evan Patton (<a href="mailto:ewpatton@mit.edu">ewpatton@mit.edu</a>) and Dr. Natalie Lao (<a href="mailto:natalie@appinventor.org">natalie@appinventor.org</a>).
+    </p>
+  </div>
+</section>
+
+<!-- Main Call for Papers -->
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Main Call for Papers</h2>
+    <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">
+      Papers should be 2&ndash;4 pages, excluding references. Accepted papers will be presented at the Summit and
+      published under the <strong>Creative Commons 4.0 International Share-Alike</strong> license.
+      Submissions will be organized into two tracks:
+    </p>
+
+    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Track 1: Research</h3>
+    <ul style="padding-left: 1.25rem; color: var(--gray-dark); margin-bottom: 1.5rem;">
+      <li>Learning and education studies related to computational thinking, AI, and data science</li>
+      <li>Teaching practices, curriculum design, and classroom/program implementation</li>
+      <li>Novel assessment, feedback, and evaluation frameworks for computing and AI education</li>
+      <li>Addressing access and increased participation in computing education</li>
+      <li>Impacts of computing and AI education policies</li>
+    </ul>
+
+    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Track 2: Innovative Applications</h3>
+    <ul style="padding-left: 1.25rem; color: var(--gray-dark);">
+      <li>Computing projects addressing real-world challenges such as climate, sustainability, health, civic engagement, and biotechnology</li>
+      <li>AI tools for good, interactive projects, and examples of computational action</li>
+      <li>The future of C.S. education in an A.I. world</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Main Call for Posters -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Main Call for Posters</h2>
+    <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">
+      Posters should be no larger than 3&nbsp;ft &times; 4&nbsp;ft in either portrait or landscape orientation.
+      The minimum font sizes recommended for readability are 48pt for body text and 32pt for captions.
+      Accepted posters are published under the <strong>Creative Commons 4.0 International Share-Alike</strong> license.
+    </p>
+
+    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Topics</h3>
+    <ul style="padding-left: 1.25rem; color: var(--gray-dark);">
+      <li>Case studies in computing, AI, and data science education</li>
+      <li>Curriculum examples and innovative teaching approaches</li>
+      <li>Assessment, feedback, and adaptive learning in computing education</li>
+      <li>Demonstrations of projects, apps, and AI-enhanced instruction and learning tools</li>
+      <li>Uses of computing for real-world problem solving and social impact</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Youth Call for Papers -->
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Youth Call for Papers</h2>
+    <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">
+      All authors must be 18 years of age or younger, or be scheduled to finish their final year of secondary
+      school/high school in 2026. Papers should be 2&ndash;4 pages, excluding references. Accepted papers will be
+      presented at the Summit and published under the <strong>Creative Commons 4.0 International Share-Alike</strong> license.
+      Youth presenters must be accompanied by a registered adult chaperone.
+      Submissions will be organized into two tracks:
+    </p>
+
+    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Track 1: Research</h3>
+    <ul style="padding-left: 1.25rem; color: var(--gray-dark); margin-bottom: 1.5rem;">
+      <li>Learning and education studies related to computational thinking, AI, and data science</li>
+      <li>Teaching practices, curriculum design, and classroom/program implementation</li>
+      <li>Novel assessment, feedback, and evaluation frameworks for computing and AI education</li>
+      <li>Addressing access and increased participation in computing education</li>
+      <li>Impacts of computing and AI education policies</li>
+    </ul>
+
+    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Track 2: Innovative Applications</h3>
+    <ul style="padding-left: 1.25rem; color: var(--gray-dark);">
+      <li>Computing projects addressing real-world challenges such as climate, sustainability, health, civic engagement, and biotechnology</li>
+      <li>AI tools for good, interactive projects, and examples of computational action</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Youth Call for Posters -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Youth Call for Posters</h2>
+    <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">
+      All authors must be 18 years of age or younger, or be scheduled to finish their final year of secondary
+      school/high school in 2026. Posters should be no larger than 3&nbsp;ft &times; 4&nbsp;ft in either portrait or
+      landscape orientation. The minimum font sizes recommended for readability are 48pt for body text and 32pt for
+      captions. Accepted posters are published under the <strong>Creative Commons 4.0 International Share-Alike</strong> license.
+    </p>
+
+    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Topics</h3>
+    <ul style="padding-left: 1.25rem; color: var(--gray-dark);">
+      <li>Case studies in computing, AI, and data science education</li>
+      <li>Curriculum examples and innovative teaching approaches</li>
+      <li>Assessment, feedback, and adaptive learning in computing education</li>
+      <li>Demonstrations of projects, apps, and AI-enhanced instruction and learning tools</li>
+      <li>Uses of computing for real-world problem solving and social impact</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Submit CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to Submit?</h2>
+    <p>Submissions are due by 11:59 PM EDT on May 4, 2026.</p>
+    <a href="https://aif.to/2026-summit-call" class="btn btn--white">Submit Now</a>
+  </div>
+</section>
+
+
+  <!-- Logos -->
+  <section class="section" style="padding: 2.5rem 1.5rem;">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+      <img src="/mitappinventor_logo_horiz_textcolor.png" alt="MIT App Inventor" style="height: 60px; width: auto;">
+      <img src="/appinventorfoundation_horiz_transparent.png" alt="App Inventor Foundation" style="height: 60px; width: auto;">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 <a href="https://appinventor.mit.edu" target="_blank" rel="noopener">MIT App Inventor</a>. All rights reserved.</p>
+      <p style="margin-top: 0.5rem;">Massachusetts Institute of Technology &middot; 77 Massachusetts Ave, Cambridge, MA 02139</p>
+      <p><a href="https://accessibility.mit.edu" target="_blank">Accessibility</a>
+    </div>
+  </footer>
+
+</body>
+</html>
