@@ -405,8 +405,25 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      .nav {
+        padding: 0 0.75rem;
+      }
+
+      .nav-brand {
+        font-size: 0.82rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100% - 56px);
+      }
+
       .nav-toggle {
         display: block;
+        flex-shrink: 0;
       }
 
       .nav-links {
@@ -598,6 +615,14 @@
       <p><a href="https://accessibility.mit.edu" target="_blank">Accessibility</a>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
 
 </body>
 </html>
