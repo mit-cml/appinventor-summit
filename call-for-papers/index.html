@@ -413,13 +413,6 @@
         padding: 0 0.75rem;
       }
 
-      .nav-brand {
-        font-size: 0.82rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: calc(100% - 56px);
-      }
 
       .nav-toggle {
         display: block;
@@ -448,7 +441,7 @@
 <body>
 
   <nav class="nav">
-    <a class="nav-brand" href="/">MIT App Inventor Global Education Summit 2026</a>
+    <a class="nav-brand" href="/"><img src="/logo.png" alt="MIT App Inventor Global Education Summit 2026" style="height: 36px; width: auto; display: block;"></a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
@@ -458,7 +451,7 @@
       <li><a href="/#speakers">Speakers</a></li>
       <li><a href="/#venue">Venue</a></li>
       <li><a href="/#faq">FAQ</a></li>
-      <li><a href="/#sponsors">Sponsors</a></li>
+      <li><a href="/#sponsors">Sponsors &amp; Supporters</a></li>
       <li><a href="/call-for-papers">Call for Submissions</a></li>
       <li><a href="https://mit.networkforgood.com/events/99722-mit-app-inventor-s-global-education-summit" class="btn btn--red" style="padding: 0.5rem 1rem; font-size: 0.85rem;" target="_blank" rel="noopener">Register</a></li>
     </ul>
