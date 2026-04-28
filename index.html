@@ -338,6 +338,75 @@
       color: var(--gray-medium);
     }
 
+    .sponsor-tier-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.25rem;
+      margin: 2rem 0 2rem;
+    }
+
+    .sponsor-tier-card:nth-child(1),
+    .sponsor-tier-card:nth-child(2) {
+      grid-column: span 3;
+    }
+
+    .sponsor-tier-card:nth-child(3),
+    .sponsor-tier-card:nth-child(4),
+    .sponsor-tier-card:nth-child(5) {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 640px) {
+      .sponsor-tier-grid {
+        grid-template-columns: 1fr;
+      }
+      .sponsor-tier-card:nth-child(n) {
+        grid-column: span 1;
+      }
+    }
+
+    .sponsor-tier-card {
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sponsor-tier-card__name {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--mit-red);
+      margin-bottom: 0.4rem;
+    }
+
+    .sponsor-tier-card__price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+    }
+
+    .sponsor-tier-card__benefits {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--gray-dark);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .sponsor-tier-card__benefits li::before {
+      content: "✓ ";
+      color: var(--mit-red);
+      font-weight: 700;
+    }
+
     /* CTA Section */
     .cta {
       background: var(--mit-red);
@@ -647,10 +716,60 @@
 <section id="sponsors" class="section section--gray">
   <div class="container">
     <h2 class="section-title">Sponsors and Supporters</h2>
-    <p class="section-subtitle">Interested in sponsoring? <a href="mailto:mai-sponsorship@mit.edu?subject=Summit%20sponsorship%20opportunities">Get in touch</a></p>
     <div class="sponsor-logos" style="margin-top: 1.5rem;">
       <img src="/B4SIF_Logo_Color.png" alt="Braze for Social Impact Fund" style="height: 80px; width: auto;">
     </div>
+    <p class="section-subtitle">Join global organizations shaping the future of education by sponsoring the MIT App Inventor Global Education Summit.</p>
+
+    <div class="sponsor-tier-grid">
+      <div class="sponsor-tier-card">
+        <div class="sponsor-tier-card__name">Premier Sponsorship</div>
+        <div class="sponsor-tier-card__price">$250,000</div>
+        <ul class="sponsor-tier-card__benefits">
+          <li>10 complimentary tickets</li>
+          <li>Speaking slot at the event</li>
+          <li>Logo as Premier Sponsor on website, social media &amp; program</li>
+        </ul>
+      </div>
+      <div class="sponsor-tier-card">
+        <div class="sponsor-tier-card__name">Global Sponsorship</div>
+        <div class="sponsor-tier-card__price">$150,000</div>
+        <ul class="sponsor-tier-card__benefits">
+          <li>5 complimentary tickets</li>
+          <li>Logo as Global Sponsor on website, social media &amp; program</li>
+          <li>Invitation to Sponsors meeting with Prof. Hal Abelson</li>
+        </ul>
+      </div>
+      <div class="sponsor-tier-card">
+        <div class="sponsor-tier-card__name">Innovation Sponsorship</div>
+        <div class="sponsor-tier-card__price">$50,000</div>
+        <ul class="sponsor-tier-card__benefits">
+          <li>2 complimentary tickets</li>
+          <li>Logo as Innovation Sponsor on website &amp; program</li>
+          <li>Invitation to Sponsors meeting with Prof. Hal Abelson</li>
+        </ul>
+      </div>
+      <div class="sponsor-tier-card">
+        <div class="sponsor-tier-card__name">Community Sponsorship</div>
+        <div class="sponsor-tier-card__price">$15,000</div>
+        <ul class="sponsor-tier-card__benefits">
+          <li>1 complimentary ticket</li>
+          <li>Logo as Community Sponsor on website</li>
+          <li>Invitation to Sponsors-only meeting with Prof. Hal Abelson</li>
+        </ul>
+      </div>
+      <div class="sponsor-tier-card">
+        <div class="sponsor-tier-card__name">Supporter Sponsorship</div>
+        <div class="sponsor-tier-card__price">$1,200</div>
+        <ul class="sponsor-tier-card__benefits">
+          <li>2 general &amp; workshop tickets</li>
+          <li>Acknowledgement as Supporter on website &amp; social media</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="section-subtitle" style="margin-top: 1.5rem;">If you're interested in becoming a sponsor, we'd love to hear from you at <a href="mailto:mai-sponsorship@mit.edu?subject=Summit%20sponsorship%20opportunities">mai-sponsorship@mit.edu</a></p>
+
   </div>
 </section>
 
