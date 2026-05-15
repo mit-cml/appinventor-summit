@@ -274,9 +274,56 @@
     }
 
     /* Speaker Cards */
+    .speaker-featured {
+      display: flex;
+      gap: 2rem;
+      background: var(--gray-light);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .speaker-featured__photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .speaker-featured__info {}
+
+    .speaker-featured__label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--mit-red);
+      margin-bottom: 0.35rem;
+    }
+
+    .speaker-featured__name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+
+    .speaker-featured__role {
+      font-size: 0.9rem;
+      color: var(--gray-medium);
+      margin-bottom: 1rem;
+    }
+
+    .speaker-featured__bio {
+      font-size: 0.88rem;
+      color: var(--gray-dark);
+      line-height: 1.65;
+    }
+
     .speakers-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 1.5rem;
     }
 
@@ -288,8 +335,8 @@
     }
 
     .speaker-avatar {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       background: #ddd;
       margin: 0 auto 1rem;
@@ -298,6 +345,13 @@
       justify-content: center;
       font-size: 2rem;
       color: var(--gray-medium);
+      overflow: hidden;
+    }
+
+    .speaker-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .speaker-card h3 {
@@ -308,6 +362,14 @@
     .speaker-card p {
       font-size: 0.85rem;
       color: var(--gray-medium);
+    }
+
+    @media (max-width: 600px) {
+      .speaker-featured {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
     }
 
     /* Venue */
@@ -779,36 +841,46 @@
 <section id="speakers" class="section">
   <div class="container">
     <h2 class="section-title">Speakers</h2>
-    <p class="section-subtitle">Keynote and featured speakers will be announced soon</p>
-    <!--
+
+    <!-- Keynote -->
+    <div class="speaker-featured">
+      <img class="speaker-featured__photo" src="/speakers/VivienneMing.greenbackground.jpg" alt="Dr. Vivienne Ming">
+      <div class="speaker-featured__info">
+        <div class="speaker-featured__label">Keynote Speaker</div>
+        <div class="speaker-featured__name">Dr. Vivienne Ming</div>
+        <div class="speaker-featured__role">Founder &amp; Executive Chair, The Human Trust &middot; Chief Scientist, Possibility Sciences</div>
+        <p class="speaker-featured__bio">The Atlantic once called Dr. Vivienne Ming a "professional mad scientist." In more mundane terms she is a theoretical neuroscientist, entrepreneur, and author. She is the Founder and Executive Chair of The Human Trust, a philanthropic "mad science" incubator, and the Chief Scientist at Possibility Sciences, where she is pioneering hybrid intelligence systems for the future of innovation. Vivienne was an early pioneer in using AI for human potential. As Chief Scientist of Gild, she built machine learning models trained on 122 million professionals to predict human capability. Today, through The Human Trust, she has developed AI to treat diabetes and bipolar disorder, reunite orphan refugees, and help autistic children learn facial expressions. Her new best-selling book, <em>Robot-Proof: When Machines Have All The Answers, Build Better People</em>, shares the stories of 30 years of using AI to improve lives.</p>
+      </div>
+    </div>
+
+    <!-- Additional speakers -->
     <div class="speakers-grid">
 
       <div class="speaker-card">
         <div class="speaker-avatar">?</div>
-        <h3>Keynote Speaker</h3>
+        <h3>Speaker</h3>
         <p>To be announced</p>
       </div>
 
       <div class="speaker-card">
         <div class="speaker-avatar">?</div>
-        <h3>Featured Speaker</h3>
+        <h3>Speaker</h3>
         <p>To be announced</p>
       </div>
 
       <div class="speaker-card">
         <div class="speaker-avatar">?</div>
-        <h3>Featured Speaker</h3>
+        <h3>Speaker</h3>
         <p>To be announced</p>
       </div>
 
       <div class="speaker-card">
         <div class="speaker-avatar">?</div>
-        <h3>Featured Speaker</h3>
+        <h3>Speaker</h3>
         <p>To be announced</p>
       </div>
 
     </div>
-    -->
   </div>
 </section>
 
