@@ -187,8 +187,8 @@
 
     /* Schedule Grid */
     .schedule-grid {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 1.5rem;
     }
 
@@ -200,30 +200,77 @@
       border-top: 4px solid var(--mit-red);
     }
 
-    .schedule-day h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.25rem;
+    .schedule-day__header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
     }
 
-    .schedule-day .date {
+    .schedule-day__header h3 {
+      font-size: 1.15rem;
+      margin: 0;
+    }
+
+    .schedule-day__header .date {
       font-size: 0.9rem;
       color: var(--gray-medium);
-      margin-bottom: 0.75rem;
     }
 
-    .schedule-day ul {
-      list-style: none;
-      padding: 0;
+    .schedule-rows {
+      display: flex;
+      flex-direction: column;
     }
 
-    .schedule-day li {
-      padding: 0.4rem 0;
+    .schedule-row {
+      display: flex;
+      gap: 1.25rem;
+      padding: 0.5rem 0;
       border-bottom: 1px solid #f0f0f0;
+      align-items: flex-start;
+    }
+
+    .schedule-row:last-child {
+      border-bottom: none;
+    }
+
+    .schedule-time {
+      font-size: 0.72rem;
+      color: var(--gray-medium);
+      white-space: nowrap;
+      min-width: 130px;
+      padding-top: 0.15rem;
+      flex-shrink: 0;
+    }
+
+    .schedule-event {
       font-size: 0.95rem;
     }
 
-    .schedule-day li:last-child {
-      border-bottom: none;
+    .schedule-event__title {
+      font-weight: 600;
+    }
+
+    .schedule-event__detail {
+      font-size: 0.82rem;
+      color: var(--gray-dark);
+      margin-top: 0.2rem;
+      line-height: 1.5;
+    }
+
+    .schedule-event__subs {
+      list-style: none;
+      padding: 0;
+      margin-top: 0.3rem;
+    }
+
+    .schedule-event__subs li {
+      font-size: 0.82rem;
+      color: var(--gray-dark);
+      padding: 0.1rem 0 0.1rem 0.75rem;
+      border: none;
+      border-left: 2px solid #ddd;
+      margin-bottom: 0.2rem;
     }
 
     /* Speaker Cards */
@@ -446,10 +493,6 @@
 
     /* Responsive */
     @media (min-width: 640px) {
-      .schedule-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
       .venue-info {
         grid-template-columns: 1fr 1fr;
       }
@@ -550,45 +593,182 @@
 <section id="schedule" class="section section--gray">
   <div class="container">
     <h2 class="section-title">Schedule Overview</h2>
-    <p class="section-subtitle">A detailed schedule will be posted closer to the event</p>
     <div class="schedule-grid">
 
+      <!-- Day 1 -->
       <div class="schedule-day">
-        <h3>Day 1:</h3>
-        <p class="date">Monday, July 6</p>
-        <ul>
-          <li>Morning registration &amp; welcome</li>
-          <li>Keynote &amp; invited talks</li>
-          <li>Paper presentations</li>
-          <li>Hands-on workshops</li>
-          <li>Hackathon</li>
-          <li>MIT App Inventor PD workshop</li>
-        </ul>
+        <div class="schedule-day__header">
+          <h3>Day 1</h3>
+          <span class="date">Monday, July 6</span>
+        </div>
+        <div class="schedule-rows">
+          <div class="schedule-row">
+            <span class="schedule-time">9:00 – 9:30 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Welcome Remarks</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">9:45 – 10:40 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Invited Talks</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">10:40 – 11:00 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Coffee Break</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">11:00 AM – 12:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">App Inventor Panel</div>
+              <div class="schedule-event__detail">
+                Moderator: Max Lu, Harvard Graduate School of Education<br>
+                Panelists: Evan Patton, Marisol Diaz (MIT App Inventor); Kelly Shiohira, José Dominguez, Mark Friedman (App Inventor Foundation); Diego Barreiro (Kodular)
+              </div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">12:05 – 1:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Lunch Break, Photos &amp; Networking</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">1:15 – 3:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Main Track Paper Presentations</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">3:00 – 3:30 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Afternoon Break</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">3:30 – 5:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Parallel Sessions</div>
+              <ul class="schedule-event__subs">
+                <li>AI Open House Workshops</li>
+                <li>MIT Hacking Medicine Hackathon</li>
+                <li>MIT App Inventor Professional Development &amp; Teacher Training Workshop</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- Day 2 -->
       <div class="schedule-day">
-        <h3>Day 2:</h3>
-        <p class="date">Tuesday, July 7</p>
-        <ul>
-          <li>Keynote</li>
-          <li>Global Appathon showcase</li>
-          <li>Responsible AI implementation panel</li>
-          <li>Paper presentations</li>
-          <li>Poster &amp; demo session</li>
-          <li>Hackathon</li>
-        </ul>
+        <div class="schedule-day__header">
+          <h3>Day 2</h3>
+          <span class="date">Tuesday, July 7</span>
+        </div>
+        <div class="schedule-rows">
+          <div class="schedule-row">
+            <span class="schedule-time">9:00 – 9:30 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Keynote: Dr. Vivienne Ming</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">9:30 – 10:50 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Global Appathon Showcase</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">10:50 – 11:00 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Coffee Break</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">11:00 AM – 12:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Responsible AI Implementation Around the World Panel</div>
+              <div class="schedule-event__detail">
+                Co-Moderators: Leo Burd (Brazilian Creative Learning Network), Kelly Shiohira (App Inventor Foundation / JET Education Services, South Africa)<br>
+                Panelists: Rishi Mazumdar (Quest Alliance, India), Catalina Rata (UiPath Foundation, Romania), Ayaka Nagai (Wagamama Lab, Japan)
+              </div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">12:00 – 1:30 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Lunch Break, Photos &amp; Networking</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">1:30 – 3:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Youth Track Paper Presentations</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">3:00 – 3:30 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Afternoon Break</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">3:30 – 5:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Parallel Sessions</div>
+              <ul class="schedule-event__subs">
+                <li>AI Open House Workshops</li>
+                <li>Poster Session &amp; Demos</li>
+                <li>MIT Hacking Medicine Hackathon</li>
+                <li>MIT App Inventor Professional Development &amp; Teacher Training Workshop (Hosted by App Inventor Foundation)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- Day 3 -->
       <div class="schedule-day">
-        <h3>Day 3:</h3>
-        <p class="date">Wednesday, July 8</p>
-        <ul>
-          <li>Posters &amp; hackathon lightning talks</li>
-          <li>Caring &amp; community building panel</li>
-          <li>Award ceremony</li>
-          <li>Closing remarks</li>
-          <li>Limited MIT group tours (preregistration required)</li>
-        </ul>
+        <div class="schedule-day__header">
+          <h3>Day 3</h3>
+          <span class="date">Wednesday, July 8</span>
+        </div>
+        <div class="schedule-rows">
+          <div class="schedule-row">
+            <span class="schedule-time">9:00 – 10:30 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Poster + Hackathon Lightning Talks</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">10:30 – 11:30 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Youth in AI Panel</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">11:30 – 11:35 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Coffee Break</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">11:35 – 11:45 AM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Award Ceremony</div>
+              <div class="schedule-event__detail">Global Appathon Showcase, Best Posters, Best Papers, MIT Hacking Medicine Hackathon Award</div>
+            </div>
+          </div>
+          <div class="schedule-row">
+            <span class="schedule-time">11:45 AM – 12:00 PM</span>
+            <div class="schedule-event">
+              <div class="schedule-event__title">Closing Remarks</div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
