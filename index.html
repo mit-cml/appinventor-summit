@@ -22,6 +22,15 @@
       --gray-light: #F5F5F5;
       --white: #FFFFFF;
       --nav-height: 60px;
+
+      /* Shared spacing scale */
+      --space-xs: 0.5rem;
+      --space-sm: 0.75rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2rem;
+      --space-2xl: 3rem;
+      --space-3xl: 5rem;
     }
 
     html {
@@ -42,6 +51,18 @@
 
     a:hover {
       color: var(--mit-red-dark);
+    }
+
+    h1, h2, h3, h4 {
+      line-height: 1.2;
+    }
+
+    p, li {
+      line-height: 1.65;
+    }
+
+    img, iframe {
+      max-width: 100%;
     }
 
     /* Navigation */
@@ -104,11 +125,15 @@
 
     /* Sections */
     .section {
-      padding: 4rem 1.5rem;
+      padding: clamp(var(--space-2xl), 7vw, var(--space-3xl)) var(--space-lg);
     }
 
     .section--gray {
       background: var(--gray-light);
+    }
+
+    .section--bordered {
+      border-top: 1px solid #e8e8e8;
     }
 
     .container {
@@ -117,16 +142,61 @@
     }
 
     .section-title {
-      font-size: 2rem;
+      font-size: clamp(1.75rem, 4vw, 2rem);
       font-weight: 700;
-      margin-bottom: 1rem;
+      margin-bottom: var(--space-sm);
       color: var(--charcoal);
     }
 
+    .section-title + :not(.section-subtitle) {
+      margin-top: var(--space-xl);
+    }
+
     .section-subtitle {
+      max-width: 760px;
       font-size: 1.1rem;
+      line-height: 1.6;
       color: var(--gray-dark);
-      margin-bottom: 2rem;
+      margin-bottom: var(--space-xl);
+    }
+
+    /* Use this wrapper for ordinary prose instead of one-off inline margins. */
+    .content-flow {
+      max-width: 75ch;
+    }
+
+    .content-flow > * + * {
+      margin-top: var(--space-md);
+    }
+
+    .content-flow > h3,
+    .content-flow > h4 {
+      margin-top: var(--space-xl);
+    }
+
+    .content-flow ul,
+    .content-flow ol {
+      padding-left: 1.25rem;
+    }
+
+    .content-flow li + li {
+      margin-top: 0.35rem;
+    }
+
+    /* Responsive video */
+    .video-embed {
+      width: min(100%, 800px);
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    .video-embed iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     /* Hero */
@@ -136,7 +206,7 @@
         url('/MITAIEduSummit2025_HalPresenting_SideView.JPG') center/cover no-repeat;
       color: var(--white);
       text-align: center;
-      padding: 6rem 1.5rem;
+      padding: clamp(4.5rem, 10vw, 6rem) var(--space-lg);
     }
 
     .hero .tagline {
@@ -432,7 +502,9 @@
     .sponsor-logos {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      align-items: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
     }
 
     .sponsor-placeholder {
@@ -521,7 +593,7 @@
       background: var(--mit-red);
       color: var(--white);
       text-align: center;
-      padding: 4rem 1.5rem;
+      padding: clamp(3.5rem, 7vw, 5rem) var(--space-lg);
     }
 
     .cta h2 {
@@ -532,7 +604,30 @@
     .cta p {
       font-size: 1.1rem;
       opacity: 0.9;
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--space-lg);
+    }
+
+    .cta .cta-note {
+      margin: var(--space-md) 0 0;
+      font-size: 0.85rem;
+      line-height: 1.55;
+      opacity: 0.85;
+    }
+
+    .sponsor-contact {
+      margin: var(--space-lg) 0 0;
+    }
+
+    .logo-strip {
+      padding-block: var(--space-2xl);
+    }
+
+    .logo-strip__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2xl);
+      flex-wrap: wrap;
     }
 
     /* Footer */
@@ -542,6 +637,10 @@
       text-align: center;
       padding: 2rem 1.5rem;
       font-size: 0.85rem;
+    }
+
+    .footer p + p {
+      margin-top: var(--space-xs);
     }
 
     .footer a {
@@ -557,12 +656,6 @@
     @media (min-width: 640px) {
       .venue-info {
         grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .section {
-        padding: 5rem 2rem;
       }
     }
 
@@ -634,39 +727,45 @@
   <div class="container">
     <h2 class="section-title">About the Summit</h2>
     <p class="section-subtitle">Three days of learning, sharing, and building together</p>
-    <p>
-      The MIT App Inventor Global Education Summit brings together educators,
-      researchers, developers, and students from around the world to explore the
-      future of computing education. Now in its latest edition, the summit
-      showcases innovative teaching practices, cutting-edge research, and
-      inspiring stories of how App Inventor is transfor classrooms globally.
-    </p>
-    <p style="margin-top: 1rem;">
-      <a href="https://appinventor.mit.edu" target="_blank" rel="noopener">MIT App Inventor</a>
-      is a free, blocks-based program environment that makes it easy for
-      anyone&mdash;even beginners&mdash;to build fully functional apps for
-      Android and iOS devices. Since its launch, over 30 million users in across 195 countries
-      and regions have created more than 120 million apps.
-    </p>
+    <div class="content-flow">
+      <p>
+        The MIT App Inventor Global Education Summit brings together educators,
+        researchers, developers, and students from around the world to explore the
+        future of computing education. Now in its latest edition, the summit
+        showcases innovative teaching practices, cutting-edge research, and
+        inspiring stories of how App Inventor is transforming classrooms globally.
+      </p>
+      <p>
+        <a href="https://appinventor.mit.edu" target="_blank" rel="noopener">MIT App Inventor</a>
+        is a free, blocks-based program environment that makes it easy for
+        anyone&mdash;even beginners&mdash;to build fully functional apps for
+        Android and iOS devices. Since its launch, over 30 million users across 195 countries
+        and regions have created more than 120 million apps.
+      </p>
 
-    <h4 style="margin-top: 1rem;">Satellite Workshops</h4>
-    
-    <p style="margin-top: 1rem;">
-      Cambridge attendees will also celebrate work being done during the Summit at <strong>satellite workshops hosted in Japan, Hong Kong, Romania, and India</strong>. If you are local to their sites, we hope you can join:
-    </p>
+      <h4>Satellite Workshops</h4>
 
-    <ul style="margin: 1rem 0 1rem 1rem;">
-      <li>July 4–12: <a href="https://wagamamalab.jp/posts/japansatellitews2026/">Japan Satellite Workshop</a></li>
-      <li>July 6: <a href="https://forms.gle/Mj7uGTk3eNnoVVZ46">Bangalore, India, "Build What Your Community Needs — A Computational Action Workshop" from Quest Alliance</a></li>
-      <li>July 7: <a href="https://hkinnovationnode.mit.edu/mit-app-inventor-global-education-summit-2026-hong-kong-educator-workshop/">Hong Kong Educator Workshop</a></li>
-      <li>July 8: "AI &amp; Education in Romania" (Closed registration)</li>
-    </ul>
+      <p>
+        Cambridge attendees will also celebrate work being done during the Summit at <strong>satellite workshops hosted in Japan, Hong Kong, Romania, and India</strong>. If you are local to their sites, we hope you can join:
+      </p>
+
+      <ul>
+        <li>July 4–12: <a href="https://wagamamalab.jp/posts/japansatellitews2026/">Japan Satellite Workshop</a></li>
+        <li>July 6: <a href="https://forms.gle/Mj7uGTk3eNnoVVZ46">Bangalore, India, "Build What Your Community Needs — A Computational Action Workshop" from Quest Alliance</a></li>
+        <li>July 7: <a href="https://hkinnovationnode.mit.edu/mit-app-inventor-global-education-summit-2026-hong-kong-educator-workshop/">Hong Kong Educator Workshop</a></li>
+        <li>July 8: "AI &amp; Education in Romania" (Closed registration)</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section id="videos">
-    <h3>Videos from This Year's Summit</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YJHwhqRN8es?si=4rArm77S2u4ofdwX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section id="videos" class="section section--bordered">
+  <div class="container">
+    <h2 class="section-title">Videos from This Year's Summit</h2>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/YJHwhqRN8es?si=4rArm77S2u4ofdwX" title="MIT App Inventor Global Education Summit 2026 video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
 </section>
 
 <!-- Schedule -->
@@ -1142,7 +1241,7 @@
 <section id="sponsors" class="section section--gray">
   <div class="container">
     <h2 class="section-title">Sponsors and Supporters</h2>
-    <div class="sponsor-logos" style="margin: 1.5rem;">
+    <div class="sponsor-logos">
       <img src="/B4SIF_Logo_Color.png" alt="Braze for Social Impact Fund" style="height: 80px; width: auto;">
       <img src="/mit-hacking-medicine-logo.png" alt="MIT Hacking Medicine" style="height: 80px; width: auto;">
     </div>
@@ -1195,25 +1294,14 @@
       </div>
     </div>
 
-    <p class="section-subtitle" style="margin-top: 1.5rem;">If you're interested in becoming a sponsor, we'd love to hear from you at <a href="mailto:mai-sponsorship@mit.edu?subject=Summit%20sponsorship%20opportunities">mai-sponsorship@mit.edu</a></p>
+    <p class="section-subtitle sponsor-contact">If you're interested in becoming a sponsor, we'd love to hear from you at <a href="mailto:mai-sponsorship@mit.edu?subject=Summit%20sponsorship%20opportunities">mai-sponsorship@mit.edu</a></p>
 
   </div>
 </section>
-
-<!-- Registration CTA -->
-<section id="register" class="cta">
-  <div class="container">
-    <h2>Ready to Join Us?</h2>
-    <p>Secure your spot at the MIT App Inventor Global Education Summit 2026.</p>
-    <a href="https://mit.networkforgood.com/events/99722-mit-app-inventor-s-global-education-summit" class="btn btn--white" target="_blank" rel="noopener">Register Now</a>
-    <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.85;">Attendees of the Summit acknowledge the <a href="https://docs.google.com/document/d/1Bn8DCfV53nI2G8narYmHmiim5Ld4OSr-SiH3b4EjGIQ/edit?tab=t.0" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Event Registration Terms and Conditions</a>.</p>
-  </div>
-</section>
-
 
   <!-- Logos -->
-  <section class="section" style="padding: 2.5rem 1.5rem;">
-    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+  <section class="section logo-strip">
+    <div class="container logo-strip__inner">
       <img src="/mitappinventor_logo_horiz_textcolor.png" alt="MIT App Inventor" style="height: 60px; width: auto;">
       <img src="/appinventorfoundation_horiz_transparent.png" alt="App Inventor Foundation" style="height: 60px; width: auto;">
     </div>
@@ -1222,7 +1310,7 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; 2026 <a href="https://appinventor.mit.edu" target="_blank" rel="noopener">MIT App Inventor</a>. All rights reserved.</p>
-      <p style="margin-top: 0.5rem;">Massachusetts Institute of Technology &middot; 77 Massachusetts Ave, Cambridge, MA 02139</p>
+      <p>Massachusetts Institute of Technology &middot; 77 Massachusetts Ave, Cambridge, MA 02139</p>
       <p><a href="https://accessibility.mit.edu" target="_blank">Accessibility</a></p>
     </div>
   </footer>
